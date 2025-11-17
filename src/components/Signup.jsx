@@ -6,7 +6,7 @@ import './signup.css';
 import camsImage from '../assets/wall.jpg';
 
 const API_BASE_URL =
-  import.meta.env.VITE_SERVER_IP || "http://ec2-3-90-159-31.compute-1.amazonaws.com:5000";
+  import.meta.env.VITE_SERVER_IP || "http://3.90.159.31:5000";
 
 function Signup({ onSuccess, navigateProp }) {
   const navigate = navigateProp || useNavigate(); // Use spy or fallback
@@ -50,7 +50,7 @@ function Signup({ onSuccess, navigateProp }) {
       <div className="page-wrapper">
         <div className="signup-container">
           <div className="icon-top">
-            Be part of the <strong>Black Shield's</strong> family today!
+            Be part of the <strong>Black Shield</strong> family today!
           </div>
 
           <div className="signup-image">
