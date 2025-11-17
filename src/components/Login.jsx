@@ -32,7 +32,8 @@ function Login({ onSuccess, navigateProp }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const API_BASE_URL = import.meta.env.VITE_SERVER_IP || "http://3.90.159.31:5000";
+ const API_BASE_URL =
+  import.meta.env.VITE_SERVER_IP || "http://3.90.159.31:5000";
       const res = await axios.post(`${API_BASE_URL}/api/login`, form);
       setMessage(res.data.message || 'Login successful');
 
