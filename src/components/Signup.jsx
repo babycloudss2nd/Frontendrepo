@@ -50,7 +50,7 @@ function Signup({ onSuccess, navigateProp }) {
       <div className="page-wrapper">
         <div className="signup-container">
           <div className="icon-top">
-            Be part of the <strong>Black Shield</strong> family today!
+            Be part of the <strong>Black Shield's</strong> family today!
           </div>
 
           <div className="signup-image">
