@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe("Login Page E2E Tests", () => {
-  const API_BASE_URL = "http://localhost:5000"; // make sure this matches your backend
+  const API_BASE_URL = "http://localhost:80"; // make sure this matches your backend
 
   beforeEach(() => {
     cy.visit("/login"); // open the login page

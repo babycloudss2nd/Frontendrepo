@@ -6,7 +6,7 @@ import './signup.css';
 import camsImage from '../assets/wall.jpg';
 
 const API_BASE_URL =
-  import.meta.env.VITE_SERVER_IP || "http://3.90.159.31:5000";
+  import.meta.env.VITE_SERVER_IP || "http://3.90.159.31:3000";
 
 function Signup({ onSuccess, navigateProp }) {
   const navigate = navigateProp || useNavigate();
@@ -24,7 +24,7 @@ function Signup({ onSuccess, navigateProp }) {
       const res = await axios.post(`${API_BASE_URL}/api/signup`, form);
       setMessage(res.data.message || 'Signup successful');
       if (onSuccess) onSuccess();
-      navigate('/login'); // Works with navigateProp for Cypress
+      navigate('/login');
     } catch (err) {
       setMessage(
         'Signup failed, try again: ' +

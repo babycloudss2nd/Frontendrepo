@@ -272,3 +272,4 @@ function Checkout({ cart = [], appointments = [], setCart, orders = [], setOrder
 }
 
 export default Checkout;
+

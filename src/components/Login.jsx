@@ -6,13 +6,11 @@ import './signup.css';
 import soldImage from '../assets/sold2.jpg'; 
 
 function Login({ onSuccess, navigateProp }) {
-  // Use navigateProp for testing, fallback to useNavigate in production
   const navigate = navigateProp || useNavigate();
 
   const [form, setForm] = useState({ email: '', password: '' });
   const [message, setMessage] = useState('');
 
-  // ✅ Background image + fallback color
   const backgroundStyle = {
     backgroundImage: `url(${soldImage})`,
     backgroundSize: "cover",
@@ -33,7 +31,7 @@ function Login({ onSuccess, navigateProp }) {
     e.preventDefault();
     try {
  const API_BASE_URL =
-  import.meta.env.VITE_SERVER_IP || "http://3.90.159.31:5000";
+  import.meta.env.VITE_SERVER_IP || "http://3.90.159.31:3000";
       const res = await axios.post(`${API_BASE_URL}/api/login`, form);
       setMessage(res.data.message || 'Login successful');
 
