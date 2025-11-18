@@ -9,7 +9,7 @@ const API_BASE_URL =
   import.meta.env.VITE_SERVER_IP || "http://3.90.159.31:5000";
 
 function Signup({ onSuccess, navigateProp }) {
-  const navigate = navigateProp || useNavigate(); // Use spy or fallback
+  const navigate = navigateProp || useNavigate();
 
   const [form, setForm] = useState({ name: '', email: '', password: '' });
   const [message, setMessage] = useState('');
